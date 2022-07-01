@@ -37,6 +37,7 @@ __global__ void vectorAdd(const float *A, const float *B, float *C, int numEleme
  */
 int main(void) {
     // Error code to check return values for CUDA calls
+    cudaGetDriverEntryPoint();
     cudaError_t err = cudaSuccess;
 
     // Print the vector length to be used, and compute its size
